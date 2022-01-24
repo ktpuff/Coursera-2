@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myFirstApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app5.js"></script>
+    <title>My first AngularJS App</title>
+  </head>
+  <body>
+    <h1>My first AngularJS App</h1>
+    <!--ng-model = tell it that the value of this 
+      input attribute to always be equal to scope name-->
+    <div ng-controller="MyFirstController">
+      <!--we're binding that value to whatever the input value here is.-->
+      <input type="text" ng-model="name">
+      Inside my input is: {{name}}
+    </div>
+  </body>
+</html>
